@@ -1,0 +1,13 @@
+{
+  "name": "cs-nuxtjs-website",
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "heroku-postbuild": "npm run build"
+  },
+  "dependencies": {
+    "axios": "^0.16.1",
+    "nuxt": "^0.10.7"
+  }
+}
