@@ -13,13 +13,6 @@ About this project: Create a professional website by using Nuxt.js and Built.io 
 
 You can check the [live demo](https://cs-nuxtjs-website.herokuapp.com) to get first-hand experience of the website.
 
-
-## Tutorial
-
-We have created an in-depth tutorial on how you can create a professional website using Next.js and Built.io Contentstack. By following the steps given in the tutorial, you will be able to create a website similar to the one given in the demo.
-
-[Tutorial to create a website using Nuxt.js and Built.io Contentstack](http://cs-market-place.herokuapp.com/sample-demo/blte6e5dc4eb6822c3f)
-
 ## Documentation
 
 Read Built.io Contentstack [docs](https://contentstackdocs.built.io)
