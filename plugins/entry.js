@@ -1,21 +1,30 @@
 import config from '~/config'
-var axios = require('axios')
+var contentstack = require('contentstack')
 
 export default {
     getEntry(){
     const data = new Promise((resolve, reject) => {
             if(config.contentstack.api_key && config.contentstack.access_token && config.contentstack.environment){
-                var url="https://cdn.contentstack.io/v3/content_types/home/entries?api_key="+config.contentstack.api_key+"&access_token="+config.contentstack.access_token+"&environment="+config.contentstack.environment+"&include[]=header&include[]=footer";
-                axios.get(url,{
-                }).then(function (res) {
-                    if(res.data.entries[0])
-                        resolve(res.data.entries[0])
-                    else
+                //initializing contentstck sdk
+                var Stack= contentstack.Stack({
+                    api_key: config.contentstack.api_key,
+                    access_token:config.contentstack.access_token,
+                    environment: config.contentstack.environment
+                });
+                //Query
+                var  Query = Stack.ContentType("home").Query()
+                    .includeReference('header','footer')
+                    .toJSON()
+                    .find()
+                    .then(function success(result) {
+                        if(result){
+                            resolve(result[0][0])
+                        }else{
+                            return reject("Internal Error")
+                        }
+                    }, function error(error) {
                         return reject("Internal Error")
-                })
-                 .catch(function (error) {
-                        return reject(error)
-                 });
+                    });
             }else{
                 return reject("Please provide valid config parameters")
              }
