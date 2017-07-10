@@ -7,7 +7,6 @@
     "heroku-postbuild": "npm run build"
   },
   "dependencies": {
-    "axios": "^0.16.1",
     "contentstack": "^3.1.0",
     "nuxt": "^0.10.7"
   }
