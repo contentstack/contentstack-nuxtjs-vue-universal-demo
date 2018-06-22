@@ -5,11 +5,11 @@
             <div class="container" id="maincontent" tabindex="-1">
                 <div class="row">
                     <div class="col-lg-12">
-                        <div v-if="entry.banner.image"><img v-bind:src="entry.banner.image.url" alt="" class="img-responsive"></div>
+                        <div v-if="banner.image"><img v-bind:src="banner.image.url" alt="" class="img-responsive"></div>
                         <div class="intro-text">
-                            <h1 class="name">{{entry.banner.title | exist }}</h1>
+                            <h1 class="name">{{banner.title | exist }}</h1>
                             <hr class="star-light">
-                            <span class="skills">{{entry.banner.description | exist }}</span>
+                            <span class="skills">{{banner.description | exist }}</span>
                         </div>
                     </div>
                 </div>
@@ -19,12 +19,13 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12 text-center">
-                        <h2>{{entry.portfolio.title | exist }}</h2>
+                        <h2>{{entry.title | exist }}</h2>
                         <hr class="star-primary">
                     </div>
                 </div>
                 <div class="row">
-                    <div v-for="folio in entry.portfolio.portfolo_details" class="col-sm-4 portfolio-item">
+                    <div v-for="folio in entry.portfolo_details" class="col-sm-4 portfolio-item">
+            
                         <a v-bind:href="folio.hash_link | exist | addHash " class="portfolio-link" data-toggle="modal">
                             <div class="caption">
                                 <div class="caption-content">
@@ -37,49 +38,16 @@
                 </div>
             </div>
         </section>
-        <!-- About Section -->
-        <section class="success" id="about">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12 text-center">
-                        <h2>{{entry.about.title | exist }}</h2>
-                        <hr class="star-light">
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-lg-4 col-lg-offset-2">
-                        <p>{{entry.about.left_description | exist }}</p>
-                    </div>
-                    <div class="col-lg-4">
-                        <p>{{entry.about.right_description | exist }}</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- Contact Section -->
-        <section id="contact">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12 text-center">
-                        <h2>{{entry.contact.title | exist }}</h2>
-                        <hr class="star-primary">
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2 address">
-                        <div><b>Address: </b>{{entry.contact.address | exist }}</div><div><b>Phone: </b> {{entry.contact.phone_number | exist }}</div><div><b>Email: </b> {{entry.contact.email | exist }}</div>
-                    </div>
-                </div>
-            </div>
-        </section>
+       
+       
         <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
         <div class="scroll-top page-scroll hidden-sm hidden-xs hidden-lg hidden-md">
             <a class="btn btn-primary" href="#page-top">
                 <i class="fa fa-chevron-up"></i>
             </a>
         </div>
-        <!-- Portfolio Modals -->
-        <div v-for="folio in entry.portfolio.portfolo_details">
+      <!-- Portfolio Modals -->
+        <div v-for="folio in entry.portfolo_details">
             <div v-bind:id="folio.hash_link" class="portfolio-modal modal fade" tabindex="-1" role="dialog" aria-hidden="true">
                 <div class="modal-content">
                     <div class="close-modal" data-dismiss="modal">
@@ -156,8 +124,8 @@
             }
         },
         async asyncData (){
-        let res=await Stack.getEntry("home")
-        return {entry: res, headers: res.header[0], footers:res.footer[0] }
+        let res = await Stack.getEntry("portfolio")
+        return {entry: res, headers: res.header[0], footers:res.footer[0], banner: res.banner[0]}
         },
         head () {
             return {
