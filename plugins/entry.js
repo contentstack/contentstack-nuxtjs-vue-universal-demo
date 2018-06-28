@@ -12,11 +12,13 @@ export default {
                     environment: config.contentstack.environment
                 });
                 //Query
-                if (contentTypeId == "home") {
-                    var Query = Stack.ContentType(contentTypeId).Query()
-                        .includeReference('header', 'footer')
-                        .toJSON()
-                        .find()
+
+                    if(contentTypeId == "home") {
+                        var Query = Stack.ContentType(contentTypeId).Query().includeReference('header', 'footer').toJSON().find()
+                    } else {
+                        var Query = Stack.ContentType(contentTypeId).Query().includeReference('header', 'footer', 'banner').toJSON().find()
+                    }
+                        Query
                         .then(function success(result) {
                             if (result) {
                                 resolve(result[0][0])
@@ -26,23 +28,6 @@ export default {
                         }, function error(error) {
                             return reject("Internal Error")
                         });
-
-
-                } else {
-                    var Query = Stack.ContentType(contentTypeId).Query()
-                        .includeReference('header', 'footer', 'banner')
-                        .toJSON()
-                        .find()
-                        .then(function success(result) {
-                            if (result) {
-                                resolve(result[0][0])
-                            } else {
-                                return reject("Internal Error")
-                            }
-                        }, function error(error) {
-                            return reject("Internal Error")
-                        });
-                }
             } else {
                 return reject("Please provide valid config parameters")
             }

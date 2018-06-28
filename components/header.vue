@@ -16,7 +16,7 @@
             <a href="#page-top"></a>
           </li>
           <li v-for="head in headers.menu" class="page-scroll">
-            <a v-bind:href="head.hash_link | exist | addHash">{{head.title | exist }}</a>
+            <a v-bind:href="head.hash_link | exist ">{{head.title | exist }}</a>
           </li>
         </ul>
       </div>
