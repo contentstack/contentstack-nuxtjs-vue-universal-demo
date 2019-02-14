@@ -5,9 +5,9 @@ About Contentstack: Contentstack is a headless CMS with an API-first approach th
 About this project: Create a professional website by using Nuxt.js and Contentstack.
 
 
-![banner](https://images.contentstack.io/v3/assets/bltaec8b26e2a084fe4/blt1fa1fdf86eab5c77/5915cb6fbb766ec82fbdd91b/download "banner")
+![banner](https://www.contentstack.com/docs/assets/blt35f5ef3b7fc32bf6/screenshot5.png "banner")
 
-![contact](https://images.contentstack.io/v3/assets/bltaec8b26e2a084fe4/blt9a4d503193853b55/5922e4a623871e6a141b9e63/download "contact")
+![contact](https://www.contentstack.com/docs/assets/blt2eb57a848708e613/portfolio.PNG "contact")
 
 ## Live Demo
 
