@@ -12,7 +12,10 @@
             <h3>{{footers.social.title}}</h3>
             <ul class="list-inline">
               <li v-for="social in footers.social.social_links">
-                <a v-bind:href="social.url | exist " class="btn-social btn-outline"><span class="sr-only">{{social.title | exist }}</span><i v-bind:class="social.fontawesome_class | exist "></i></a>
+                <a v-bind:href="social.url | exist " class="btn-social btn-outline">
+                  <span class="sr-only">{{social.title | exist }}</span>
+                  <i v-bind:class="social.fontawesome_class | exist "></i>
+                </a>
               </li>
             </ul>
           </div>

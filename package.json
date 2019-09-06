@@ -8,6 +8,6 @@
   },
   "dependencies": {
     "contentstack": "^3.1.0",
-    "nuxt": "^0.10.7"
+    "nuxt": "^2.9.2"
   }
 }

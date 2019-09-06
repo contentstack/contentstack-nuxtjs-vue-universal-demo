@@ -67,7 +67,9 @@
                 </div>
                 <div class="row">
                     <div class="col-lg-8 col-lg-offset-2 address">
-                        <div><b>Address: </b>{{entry.contact.address | exist }}</div><div><b>Phone: </b> {{entry.contact.phone_number | exist }}</div><div><b>Email: </b> {{entry.contact.email | exist }}</div>
+                        <div><b>Address: </b>{{entry.contact.address | exist }}</div>
+                        <div><b>Phone: </b> {{entry.contact.phone_number | exist }}</div>
+                        <div><b>Email: </b> {{entry.contact.email | exist }}</div>
                     </div>
                 </div>
             </div>
@@ -138,9 +140,9 @@
 </template>
 
 <script>
-    import Stack from '~plugins/entry'
-    import myheader from '~components/header'
-    import myfooter from '~components/footer'
+    import Stack from '~/plugins/entry'
+    import myheader from '~/components/header'
+    import myfooter from '~/components/footer'
     export default {
         filters:{
             addHash: function (value){
