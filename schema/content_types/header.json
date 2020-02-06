@@ -1,0 +1,79 @@
+{
+	"title": "Header",
+	"uid": "header",
+	"inbuilt_class": false,
+	"schema": [{
+		"display_name": "Title",
+		"uid": "title",
+		"data_type": "text",
+		"mandatory": true,
+		"unique": true,
+		"field_metadata": {
+			"_default": true
+		},
+		"multiple": false
+	}, {
+		"data_type": "group",
+		"display_name": "Menu",
+		"field_metadata": {},
+		"schema": [{
+			"data_type": "text",
+			"display_name": "Title",
+			"uid": "title",
+			"field_metadata": {
+				"description": "",
+				"default_value": "",
+				"isTitle": true
+			},
+			"format": "",
+			"error_messages": {
+				"format": ""
+			},
+			"multiple": false,
+			"mandatory": false,
+			"unique": false
+		}, {
+			"data_type": "text",
+			"display_name": "Hash Link",
+			"uid": "hash_link",
+			"field_metadata": {
+				"description": "",
+				"default_value": ""
+			},
+			"format": "",
+			"error_messages": {
+				"format": ""
+			},
+			"multiple": false,
+			"mandatory": false,
+			"unique": false
+		}],
+		"uid": "menu",
+		"multiple": true,
+		"mandatory": false,
+		"unique": false
+	}],
+
+	"maintain_revisions": true,
+	"description": "",
+	"options": {
+		"is_page": false,
+		"singleton": true,
+		"title": "title",
+		"sub_title": []
+	},
+	"abilities": {
+		"get_one_object": true,
+		"get_all_objects": true,
+		"create_object": true,
+		"update_object": true,
+		"delete_object": true,
+		"delete_all_objects": true
+	},
+	"DEFAULT_ACL": {
+		"others": {
+			"read": false,
+			"create": false
+		}
+	}
+}

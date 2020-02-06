@@ -1,0 +1,425 @@
+{
+	"title": "Home",
+	"uid": "home",
+	"inbuilt_class": false,
+	"schema": [{
+		"display_name": "Title",
+		"uid": "title",
+		"data_type": "text",
+		"mandatory": true,
+		"unique": true,
+		"field_metadata": {
+			"_default": true
+		},
+		"multiple": false
+	}, {
+		"display_name": "URL",
+		"uid": "url",
+		"data_type": "text",
+		"mandatory": true,
+		"field_metadata": {
+			"_default": true
+		},
+		"multiple": false,
+		"unique": false
+	}, {
+		"data_type": "reference",
+		"display_name": "Header",
+		"reference_to": ["header"],
+		"field_metadata": {
+			"ref_multiple": false,
+			"ref_multiple_content_types": true
+		},
+		"uid": "header",
+		"multiple": false,
+		"mandatory": true,
+		"unique": false
+	}, {
+		"data_type": "group",
+		"display_name": "Banner",
+		"field_metadata": {},
+		"schema": [{
+			"data_type": "text",
+			"display_name": "Title",
+			"uid": "title",
+			"field_metadata": {
+				"description": "",
+				"default_value": ""
+			},
+			"format": "",
+			"error_messages": {
+				"format": ""
+			},
+			"multiple": false,
+			"mandatory": false,
+			"unique": false
+		}, {
+			"data_type": "text",
+			"display_name": "Description",
+			"uid": "description",
+			"field_metadata": {
+				"description": "",
+				"default_value": "",
+				"multiline": true
+			},
+			"format": "",
+			"error_messages": {
+				"format": ""
+			},
+			"multiple": false,
+			"mandatory": false,
+			"unique": false
+		}, {
+			"data_type": "file",
+			"display_name": "Image",
+			"uid": "image",
+			"extensions": [],
+			"field_metadata": {
+				"description": "",
+				"rich_text_type": "standard"
+			},
+			"multiple": false,
+			"mandatory": false,
+			"unique": false
+		}],
+		"uid": "banner",
+		"multiple": false,
+		"mandatory": false,
+		"unique": false
+	}, {
+		"data_type": "group",
+		"display_name": "PORTFOLIO",
+		"field_metadata": {},
+		"schema": [{
+			"data_type": "text",
+			"display_name": "Title",
+			"uid": "title",
+			"field_metadata": {
+				"description": "",
+				"default_value": ""
+			},
+			"format": "",
+			"error_messages": {
+				"format": ""
+			},
+			"multiple": false,
+			"mandatory": false,
+			"unique": false
+		}, {
+			"data_type": "group",
+			"display_name": "Portfolo Details",
+			"field_metadata": {},
+			"schema": [{
+				"data_type": "text",
+				"display_name": "Title",
+				"uid": "title",
+				"field_metadata": {
+					"description": "",
+					"default_value": "",
+					"isTitle": true
+				},
+				"format": "",
+				"error_messages": {
+					"format": ""
+				},
+				"multiple": false,
+				"mandatory": false,
+				"unique": false
+			}, {
+				"data_type": "text",
+				"display_name": "Hash Link",
+				"uid": "hash_link",
+				"field_metadata": {
+					"description": "",
+					"default_value": ""
+				},
+				"format": "",
+				"error_messages": {
+					"format": ""
+				},
+				"multiple": false,
+				"mandatory": false,
+				"unique": false
+			}, {
+				"data_type": "text",
+				"display_name": "Description",
+				"uid": "description",
+				"field_metadata": {
+					"allow_rich_text": true,
+					"description": "",
+					"multiline": false,
+					"rich_text_type": "advanced"
+				},
+				"multiple": false,
+				"mandatory": false,
+				"unique": false
+			}, {
+				"data_type": "file",
+				"display_name": "Image",
+				"uid": "image",
+				"extensions": [],
+				"field_metadata": {
+					"description": "",
+					"rich_text_type": "standard"
+				},
+				"multiple": false,
+				"mandatory": false,
+				"unique": false
+			}, {
+				"data_type": "text",
+				"display_name": "Client",
+				"uid": "client",
+				"field_metadata": {
+					"description": "",
+					"default_value": ""
+				},
+				"format": "",
+				"error_messages": {
+					"format": ""
+				},
+				"multiple": false,
+				"mandatory": false,
+				"unique": false
+			}, {
+				"data_type": "text",
+				"display_name": "Client Link",
+				"uid": "client_link",
+				"field_metadata": {
+					"description": "",
+					"default_value": ""
+				},
+				"format": "",
+				"error_messages": {
+					"format": ""
+				},
+				"multiple": false,
+				"mandatory": false,
+				"unique": false
+			}, {
+				"data_type": "text",
+				"display_name": "Service",
+				"uid": "service",
+				"field_metadata": {
+					"description": "",
+					"default_value": ""
+				},
+				"format": "",
+				"error_messages": {
+					"format": ""
+				},
+				"multiple": false,
+				"mandatory": false,
+				"unique": false
+			}, {
+				"data_type": "text",
+				"display_name": "Service Link",
+				"uid": "service_link",
+				"field_metadata": {
+					"description": "",
+					"default_value": ""
+				},
+				"format": "",
+				"error_messages": {
+					"format": ""
+				},
+				"multiple": false,
+				"mandatory": false,
+				"unique": false
+			}, {
+				"data_type": "text",
+				"display_name": "Date",
+				"uid": "date",
+				"field_metadata": {
+					"description": "",
+					"default_value": ""
+				},
+				"format": "",
+				"error_messages": {
+					"format": ""
+				},
+				"multiple": false,
+				"mandatory": false,
+				"unique": false
+			}, {
+				"data_type": "text",
+				"display_name": "Date Link",
+				"uid": "date_link",
+				"field_metadata": {
+					"description": "",
+					"default_value": ""
+				},
+				"format": "",
+				"error_messages": {
+					"format": ""
+				},
+				"multiple": false,
+				"mandatory": false,
+				"unique": false
+			}],
+			"uid": "portfolo_details",
+			"multiple": true,
+			"mandatory": false,
+			"unique": false
+		}],
+		"uid": "portfolio",
+		"multiple": false,
+		"mandatory": false,
+		"unique": false
+	}, {
+		"data_type": "group",
+		"display_name": "About",
+		"field_metadata": {},
+		"schema": [{
+			"data_type": "text",
+			"display_name": "Title",
+			"uid": "title",
+			"field_metadata": {
+				"description": "",
+				"default_value": ""
+			},
+			"format": "",
+			"error_messages": {
+				"format": ""
+			},
+			"multiple": false,
+			"mandatory": false,
+			"unique": false
+		}, {
+			"data_type": "text",
+			"display_name": "Left Description",
+			"uid": "left_description",
+			"field_metadata": {
+				"description": "",
+				"default_value": "",
+				"multiline": true
+			},
+			"format": "",
+			"error_messages": {
+				"format": ""
+			},
+			"multiple": false,
+			"mandatory": false,
+			"unique": false
+		}, {
+			"data_type": "text",
+			"display_name": "Right Description",
+			"uid": "right_description",
+			"field_metadata": {
+				"description": "",
+				"default_value": "",
+				"multiline": true
+			},
+			"format": "",
+			"error_messages": {
+				"format": ""
+			},
+			"multiple": false,
+			"mandatory": false,
+			"unique": false
+		}],
+		"uid": "about",
+		"multiple": false,
+		"mandatory": false,
+		"unique": false
+	}, {
+		"data_type": "group",
+		"display_name": "Contact",
+		"field_metadata": {},
+		"schema": [{
+			"data_type": "text",
+			"display_name": "Title",
+			"uid": "title",
+			"field_metadata": {
+				"description": "",
+				"default_value": ""
+			},
+			"format": "",
+			"error_messages": {
+				"format": ""
+			},
+			"multiple": false,
+			"mandatory": false,
+			"unique": false
+		}, {
+			"data_type": "text",
+			"display_name": "Address",
+			"uid": "address",
+			"field_metadata": {
+				"description": "",
+				"default_value": "",
+				"multiline": true
+			},
+			"format": "",
+			"error_messages": {
+				"format": ""
+			},
+			"multiple": false,
+			"mandatory": false,
+			"unique": false
+		}, {
+			"data_type": "number",
+			"display_name": "Phone Number",
+			"uid": "phone_number",
+			"field_metadata": {
+				"description": "",
+				"default_value": ""
+			},
+			"multiple": false,
+			"mandatory": false,
+			"unique": false
+		}, {
+			"data_type": "text",
+			"display_name": "Email",
+			"uid": "email",
+			"field_metadata": {
+				"description": "",
+				"default_value": ""
+			},
+			"format": "",
+			"error_messages": {
+				"format": ""
+			},
+			"multiple": false,
+			"mandatory": false,
+			"unique": false
+		}],
+		"uid": "contact",
+		"multiple": false,
+		"mandatory": false,
+		"unique": false
+	}, {
+		"data_type": "reference",
+		"display_name": "Footer",
+		"reference_to": ["footer"],
+		"field_metadata": {
+			"ref_multiple": false,
+			"ref_multiple_content_types": true
+		},
+		"uid": "footer",
+		"multiple": false,
+		"mandatory": true,
+		"unique": false
+	}],
+	"maintain_revisions": true,
+	"description": "",
+	"options": {
+		"is_page": true,
+		"singleton": true,
+		"title": "title",
+		"sub_title": []
+	},
+	"abilities": {
+		"get_one_object": true,
+		"get_all_objects": true,
+		"create_object": true,
+		"update_object": true,
+		"delete_object": true,
+		"delete_all_objects": true
+	},
+	"DEFAULT_ACL": {
+		"others": {
+			"read": false,
+			"create": false
+		}
+	}
+}
