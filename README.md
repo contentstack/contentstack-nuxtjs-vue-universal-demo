@@ -7,7 +7,7 @@ About this project: Create a professional website by using Nuxt.js and Contentst
 
 ![banner](https://images.contentstack.io/v3/assets/blt23180bf2502c7444/blta2ac47f3bf3e98a2/5d6515f1de50ec209c8f46a8/screenshot5.png "banner")
 
-![contact](https://www.contentstack.com/docs/assets/blt2eb57a848708e613/portfolio.PNG "contact")
+![contact](https://images.contentstack.io/v3/assets/blt23180bf2502c7444/bltc4beeb096cd88b31/5d6515ce6300b024aba43b94/portfolio.PNG "contact")
 
 ## Live Demo
 
