@@ -1,0 +1,89 @@
+body {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #333;
+}
+
+.address {
+    text-align: center;
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+.card {
+    display: inline-block;
+    margin: 15px;
+    height: auto;
+    width: 350px;
+    border: 1px solid grey;
+}
+
+.card-img-top {
+    width: 100%;
+    height: 200px;
+}
+
+.card-title, .card-text, .carouselTitle, .socialNtwTitle, .blogpostImage, .quotesTitle, .blogContent, .card-author {
+    text-align: center;
+}
+
+.card-strong {
+    color: black;
+}
+
+.carouselImages, .blogpostImage {
+    width: 100%;
+    height: 500px;
+}
+
+.linkToPost {
+    margin: 0px auto;
+    padding: 15px;
+    display: block;
+}
+
+.blogpostTitle, .blogContent {
+    margin: 15px;
+}
+
+.blogCarousel {
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400italic);
+.otroBlockquote {
+    width: 70%;
+    margin: 50px auto;
+    color: #555555;
+    padding: 1.2em 30px 1.2em 75px;
+    border-left: 8px solid #2C3E50;
+    line-height: 1.6;
+    position: relative;
+    background: #EDEDED;
+}
+
+.blogpostImage {
+    display: block;
+    margin: 0 auto;
+    width: 80%;
+    height: 500px;
+    margin-top: -12px;
+    padding: 12px 12px;
+}
+
+.otroBlockquote::before {
+    position: absolute;
+    left: 10px;
+    top: -10px;
+}
+
+.otroBlockquote::after {
+    content: '';
+}
+
+.quoteIcon {
+    margin-left: -70px;
+    margin-bottom: -42px;
+}
