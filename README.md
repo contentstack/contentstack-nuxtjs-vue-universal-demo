@@ -1,3 +1,6 @@
+[![Contentstack](https://www.contentstack.com/assets/blt440aad5a09c89b2f/contentstack_icon.svg)](https://www.contentstack.com/)
+
+
 # Build Website using Nuxt.js and Contentstack
 
 About Contentstack: Contentstack is a headless CMS with an API-first approach that puts content at the centre. It is designed to simplify the process of publication by separating code from content.
@@ -5,13 +8,12 @@ About Contentstack: Contentstack is a headless CMS with an API-first approach th
 About this project: Create a professional website by using Nuxt.js and Contentstack.
 
 
-![banner](https://images.contentstack.io/v3/assets/blt23180bf2502c7444/blta2ac47f3bf3e98a2/5d6515f1de50ec209c8f46a8/screenshot5.png "banner")
+![banner](https://images.contentstack.io/v3/assets/blt398b654a8f2799a0/blt81c0af7fab7c9254/5f476c18a5031b4a3bba90d3/nuxtjs-sample-app.png "banner")
 
-![contact](https://images.contentstack.io/v3/assets/blt23180bf2502c7444/bltc4beeb096cd88b31/5d6515ce6300b024aba43b94/portfolio.PNG "contact")
 
 ## Live Demo
 
-You can check the [live demo](https://cs-nuxtjs-website.herokuapp.com) to get first-hand experience of the website.
+You can check the [live demo](https://contentstack-nuxtjs-sample-app.herokuapp.com) to get first-hand experience of the website.
 
 ## Tutorial
 

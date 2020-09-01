@@ -1,35 +1,42 @@
-import config from '~/config'
-var contentstack = require('contentstack')
+/* eslint-disable prefer-promise-reject-errors */
+const contentstack = require("contentstack");
 
 export default {
-    getEntry(){
+  getEntry(contentTypeUid) {
     const data = new Promise((resolve, reject) => {
-            if(config.contentstack.api_key && config.contentstack.access_token && config.contentstack.environment){
-                //initializing contentstck sdk
-                var Stack= contentstack.Stack({
-                    api_key: config.contentstack.api_key,
-                    access_token:config.contentstack.access_token,
-                    environment: config.contentstack.environment
-                });
-                //Query
-                var  Query = Stack.ContentType("home").Query()
-                    .includeReference('header','footer')
-                    .toJSON()
-                    .find()
-                    .then(function success(result) {
-                        if(result){
-                            resolve(result[0][0])
-                        }else{
-                            return reject("Internal Error")
-                        }
-                    }, function error(error) {
-                        return reject("Internal Error")
-                    });
-            }else{
-                return reject("Please provide valid config parameters")
-             }
-
-    })
-    return data
-   }
-}
+      if (
+        process.env.api_key &&
+        process.env.delivery_token &&
+        process.env.environment
+      ) {
+        // initializing contentstck sdk
+        const Stack = contentstack.Stack({
+          api_key: process.env.api_key,
+          access_token: process.env.delivery_token,
+          environment: process.env.environment,
+        });
+        // Query
+        Stack.ContentType(contentTypeUid)
+          .Query()
+          .includeReference(["header", "footer"])
+          .toJSON()
+          .find()
+          .then(
+            function success(result) {
+              if (result) {
+                resolve(result[0]);
+              } else {
+                return reject("Internal Error");
+              }
+            },
+            function error(error) {
+              return reject(error);
+            }
+          );
+      } else {
+        return reject("Please provide valid config parameters");
+      }
+    });
+    return data;
+  },
+};
