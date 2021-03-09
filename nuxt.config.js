@@ -5,9 +5,9 @@ const webpack = require("webpack");
 export default {
   target: "static",
   env: {
-    api_key: "blt398b654a8f2799a0",
-    delivery_token: "cs5af301973f1478fa4eaca0b2",
-    environment: "development",
+    api_key: "stack_api_key",
+    delivery_token: "stack_delivery_token",
+    environment: "publishing_env",
   },
   head: {
     title: "Contentstack-Nuxtjs-Sample-App",
