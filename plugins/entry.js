@@ -3,12 +3,18 @@ const contentstack = require("contentstack");
 const Stack = contentstack.Stack(
   process.env.api_key,
   process.env.delivery_token,
-  process.env.environment
+  process.env.environment,
+  process.env.region ? process.env.region : "us"
 );
+
+if (process.env.custom_host) {
+  Stack.setHost(process.env.custom_host);
+}
+
 export default {
   getEntry(contentTypeUid) {
     const data = new Promise((resolve, reject) => {
-      // initializing contentstck sdk
+      // initializing contentstack sdk
       // Query
       Stack.ContentType(contentTypeUid)
         .Query()
