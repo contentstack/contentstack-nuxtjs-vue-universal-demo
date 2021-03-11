@@ -2,7 +2,7 @@
   "name": "@contentstack/contentstack-nuxtjs-vue-universal-demo",
   "description": "sample app demo for nuxtjs",
   "author": "Contentstack",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "private": true,
   "scripts": {
     "dev": "nuxt",
