@@ -13,11 +13,11 @@
     "lint": "eslint --ext .js,.vue --ignore-path .gitignore ."
   },
   "dependencies": {
-    "@nuxtjs/dotenv": "^1.4.0",
-    "@nuxtjs/pwa": "^3.0.0-0",
-    "contentstack": "^3.8.1",
+    "@nuxtjs/dotenv": "^1.4.1",
+    "@nuxtjs/pwa": "^3.3.5",
+    "contentstack": "^3.12.2",
     "lodash": "^4.17.15",
-    "nuxt": "^2.0.0",
+    "nuxt": "^2.15.3",
     "vue-carousel": "^0.18.0"
   },
   "devDependencies": {
