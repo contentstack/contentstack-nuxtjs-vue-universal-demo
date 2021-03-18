@@ -3,11 +3,11 @@
 const webpack = require("webpack");
 
 export default {
-  mode: "universal",
+  target: "static",
   env: {
-    api_key: "Your Api key",
-    delivery_token: "Your Delivery Token",
-    environment: "Your Publishing Environment",
+    api_key: "stack_api_key",
+    delivery_token: "stack_delivery_token",
+    environment: "publishing_env",
   },
   head: {
     title: "Contentstack-Nuxtjs-Sample-App",
