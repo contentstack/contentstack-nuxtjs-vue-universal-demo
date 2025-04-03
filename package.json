@@ -17,7 +17,7 @@
     "@nuxtjs/pwa": "^3.3.5",
     "contentstack": "^3.12.2",
     "lodash": "^4.17.15",
-    "nuxt": "^2.15.3",
+    "nuxt": "^3.4.3",
     "vue-carousel": "^0.18.0"
   },
   "devDependencies": {
